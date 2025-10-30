@@ -1,9 +1,16 @@
+// src/App.jsx
 import React from "react";
+import Header from "@components/layout/Header";
+import { BrowserRouter } from "react-router-dom";
 import AppRoutes from "./routes";
+
 export default function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <AppRoutes />
+    <div>
+      <Header />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </div>
   );
 }
